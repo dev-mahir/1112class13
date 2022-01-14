@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./assets/css/fontawesome.css">
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="py-5">
+  <div class="container">
+    <!-- Digital clock  -->
+    <div class="row">
+      <div class="col-lg-6 mx-auto py-2">
+        <h2 class="text-center pb-5 text-decoration-underline">Digital Clock</h2>
+        <div class="digital-clock">
+          <div class="clock-content">
+            <div class="watch-noti d-flex justify-content-between">
+              <div class="media-info">
+                <img src="./assets/img/musical-note.png" alt="">
+                <span><i class="fab fa-bluetooth"></i></span>
+              </div>
+              <div class="battery-ind">
+                <span> <i class="fas fa-battery-half"></i></span>
+              </div>
+            </div>
+            <div class="clock">
+              <p>Company mode</p>
+              <div class="time-sec">
+                <p id="hours">14:</p>
+                <p id="minutes">38</p>
+                <div class="time-format">
+                  <p id="seconds">09</p>
+                  <p id="format"></p>
+                </div>
+              </div>
+            </div>
+            <div class="date">
+              <p id="date">2014-10-04</p>
+              <p id="day"></p>
+            </div>
+            <div class="menu-icon">
+              <span><i class="fas fa-phone"></i></span>
+              <span><i class="far fa-user"></i></span>
+            </div>
+            <div class="menu-txt">
+              <p>Menu</p>
+              <p>Tools</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="row">
+      <div class="col-lg-6 mx-auto pt-4">
+        <h2>Timer with loader</h2>
+        <div class="timer">
+          <button id="starttimer" class="btn btn-success">Start</button>
+          <button id="stoptimer" class="btn btn-danger">Stop</button>
+          <button id="resettimer" class="btn btn-danger">Reset</button>
+          <br>
+          <br>
+          <input id="timerInput" type="number" placeholder="Enter value">
+          <br>
+          <br>
+          <div class="progress">
+            <div id="timerProggressBar" class="progress-bar" role="progressbar" style="width:0%;" aria-valuenow=""
+              aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <h2 id="timerOut" style="font-size: 150px;"></h2>
+        </div>
+      </div>
+    </div>
+
+    <!-- To do list  -->
+    <div class="row py-5">
+      <div class="col-lg-6 mx-auto">
+        <h2>To do list</h2>
+        <div class="todolist">
+          <input type="text" id="doInput" class="form-control" placeholder="add to do ">
+          <button id="todobtn" class="btn btn-info my-2">Add</button>
+          <p id="todoError"></p>
+          <ul class="list-group" id="dolist">
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Subject Marks app with notification color -->
+    <div class="row">
+      <div class="col-lg-6 mx-auto">
+        <h2>Subject Marks app with notification color</h2>
+        <input type="nubmer" id="marksInput" placeholder="Enter marks" class="form-control w-50">
+        <button class="btn btn-info my-2" id="checkMarks">Check</button>
+        <p id="showResult"></p>
+      </div>
+    </div>
+
+
+
+
+
+  </div>
+  <script src="./functions.js"></script>
+  <script src="./assets/js/bootstrap.bundle.js"></script>
+  <script src="./assets/js/all.min.js"></script>
+  <script src="./app.js"></script>
+</body>
+
+</html>
